@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://navneet-13.github.io/al-folio/sitemap.xml
+Sitemap: https://navneet-13.github.io/sitemap.xml
