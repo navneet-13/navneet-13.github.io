@@ -11,37 +11,27 @@
 - title: Education
   type: time_table
   contents:
-    - title: B.Tech
+    - title: Bachelor of Technology
       institution: Indian Institute of Technology, Bombay
       year: 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Electrical Engineering with Honours
+        #- 
+        #- title: Description 3.
+         # contents:
+          #  - Sub-description 1.
+           # - Sub-description 2,
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
+    - title: 
+      institution: 
+      year: 2023
+      description: Undergraduate Researcher
+        - Project - Proposed a storage-efficient Last Level Cache(LLC, secure against side-channel attacks
+        - Advisor: Prof. Biswabandan Panda
+    - title: Texas Instruments, India
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933
       description:
