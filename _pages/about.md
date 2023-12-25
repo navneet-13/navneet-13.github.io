@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: The website is under constructions
 
 profile:
   align: right
@@ -19,4 +19,7 @@ selected_papers: fasle # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hey! I am a final year undergraduate at the Electrical Engineering Department of the Indian Institute of Technology, Bombay. I am pursuing a Bachelor of Technology (B.Tech.) in Electrical Engineering with Honours. I am enthusiastic about hardware architecture, particularly microarchitetcural security and architecture for parallel computing. 
+Hey! I am a final year undergraduate at the Electrical Engineering Department of the Indian Institute of Technology, Bombay. I am pursuing a Bachelor of Technology (B.Tech.) in [Electrical Engineering](https://www.ee.iitb.ac.in/web/index.php) with Honours. 
+I am enthusiastic about hardware architecture and security. My interest lies in microarchitectural security and architecture for parallel computing.
+
+
