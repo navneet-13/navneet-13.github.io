@@ -25,22 +25,21 @@
 - title: Experience
   type: time_table
   contents:
-    - title: 
-      institution: 
+    - title: Undergraduate Researcher 
+      institution: Trust Lab, IIT Bombay
       year: 2023
-      description: Undergraduate Researcher
+      description: 
         - Project - Proposed a storage-efficient Last Level Cache(LLC, secure against side-channel attacks
         - Guide -  Prof. Biswabandan Panda
-    - title: Texas Instruments, India
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Digital Systems Intern
+      institution: Texas Instruments, India
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+        - Worked on developing SystemVerilog logic to classify pulse-triggered and Level-Triggered Interrupt signals of a RADAR SOC
+    - title: Embedded Systems Intern
+      institution: NanoSniff Technologies, India
+      year: 2021
+      description:
 
     - title: Professor of Theoretical Physics
       institution: Karl-Ferdinand University, Prague, Czechoslovakia
