@@ -24,4 +24,6 @@ I am enthusiastic about hardware architecture and security. My interest lies in 
 
 Besides academia, I indulge myself in various sports activities. Table tennis, football, and badminton are among my favourites along with inline skating. 
 
+You can find [my CV](https://navneet-13.github.io/assets/pdf/curriculum_vitae.pdf)
+
 
