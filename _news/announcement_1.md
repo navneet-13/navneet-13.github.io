@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Submitted my work titled "The Maya Cache: A Storage-efficient and Secure Fully-associative Last-level Cache" at the International Symposium on Computer Architecture (ISCA) 2024.
+My work, "The Maya Cache: A Storage-efficient and Secure Fully-associative Last-level Cache", got accepted at the International Symposium on Computer Architecture (ISCA) 2024.
