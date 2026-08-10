@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
+description: A growing collection of my projects in computer architecture, hardware security, and embedded systems.
+nav: false # flip to true once _projects/ is populated
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [research, hardware, robotics]
 horizontal: false
 ---
 

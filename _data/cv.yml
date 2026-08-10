@@ -63,16 +63,16 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Microarchitectural Security
       items:
-        - Description 1.
-        - Description 2.
+        - CPU side-channel attacks
+        - Cache-based side channels and secure cache design
+    - title: Computer Architecture
+      items:
+        - Memory hierarchy and prefetching
+        - Architecture for parallel computing
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Table tennis, football, badminton, inline skating

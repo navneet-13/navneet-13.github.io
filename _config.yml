@@ -8,12 +8,13 @@ middle_name:
 last_name: 
 email: krnavneet13@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  PhD student in the School of Cybersecurity and Privacy at Georgia Tech, working on
+  microarchitectural security and CPU side-channel attacks.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: Navneet, Georgia Tech, microarchitectural security, side-channel attacks, computer architecture, cache security  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -400,9 +401,11 @@ medium_zoom:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# Disabled: the CV page renders from _data/cv.yml instead. Defining `resume`
+# here would make _layouts/cv.html prefer the JSON resume over cv.yml.
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
   - work
