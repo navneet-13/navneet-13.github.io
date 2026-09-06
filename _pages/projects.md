@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of my projects in computer architecture, hardware security, and embedded systems.
 nav: true
 nav_order: 2
-display_categories: [research, hardware, robotics]
+display_categories: [research, ml, hardware, robotics]
 horizontal: false
 ---
 
