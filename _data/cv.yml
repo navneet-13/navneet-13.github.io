@@ -41,6 +41,12 @@
         - Worked to accelerate ASTRA-sim, an open-source infrastructure that models the full hardware-software co-design stack of distributed ML training systems.
         - Profiled operators such as GEMM and Collectives for state-of-the-art LLMs on NVIDIA GPUs using CUDA.
         - Developed ML models to replace Scale-Sim, a systolic-array simulator, to estimate execution timings of arbitrary GEMM operators.
+    - title: Security Assessment of ARM Desktop CPUs
+      institution: Georgia Tech (Advisor - Prof. Daniel Genkin)
+      year: Aug 2024 - Apr 2025
+      description:
+        - Worked toward mounting side-channel attacks by reverse-engineering ARM-based Snapdragon desktop CPUs.
+        - Reverse-engineered microarchitectural components such as prefetchers and the RSB using custom kernel modules on Snapdragon X Elite processors to mount attacks like RSB-based Spectre.
     - title: Avatar Cache - On-Demand Security with a Morphable Cache Architecture
       institution: Georgia Tech / IIT Bombay (Advisors - Prof. Moinuddin K. Qureshi, Prof. Biswabandan Panda)
       year: Jun 2024 - Aug 2025

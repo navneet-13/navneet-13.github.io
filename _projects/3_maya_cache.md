@@ -3,7 +3,7 @@ layout: page
 title: The Maya Cache — Secure Fully-Associative LLC
 description: A storage-efficient, secure last-level cache that mitigates eviction-based side-channel attacks.
 img:
-importance: 3
+importance: 4
 category: research
 related_publications: maya
 ---
