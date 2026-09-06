@@ -2,57 +2,31 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of my projects in computer architecture, hardware security, and embedded systems.
+description: A growing collection of my projects in computer architecture, ML systems, hardware, and robotics.
 nav: true
 nav_order: 2
 display_categories: [research, ml, hardware, robotics]
-horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<div class="projects">
+<div class="projects-list">
 {%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
   {%- assign categorized_projects = site.projects | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-  {% endfor %}
-
+  {%- assign sorted_projects = categorized_projects | sort: "importance" -%}
+  {%- if sorted_projects.size > 0 %}
+  <h2 class="category text-capitalize">{{ category }}</h2>
+  {%- for project in sorted_projects %}
+  <h3 class="mt-3 mb-1"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <p>{{ project.description }}</p>
+  {%- endfor %}
+  {%- endif %}
+  {%- endfor %}
 {%- else -%}
-<!-- Display projects without categories -->
   {%- assign sorted_projects = site.projects | sort: "importance" -%}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
+  {%- for project in sorted_projects %}
+  <h3 class="mt-3 mb-1"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <p>{{ project.description }}</p>
+  {%- endfor %}
 {%- endif -%}
 </div>
