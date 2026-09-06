@@ -3,76 +3,162 @@
   contents:
     - name: Full Name
       value: Navneet
-    - name: Date of Birth
-      value: 22nd July 2003
+    - name: Email
+      value: krnavneet13@gmail.com
+    - name: Phone
+      value: +1-404-829-5190
     - name: Languages
       value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Technology
-      institution: Indian Institute of Technology, Bombay
-      year: 2024
+    - title: PhD in Computer Science
+      institution: Georgia Institute of Technology
+      year: 2024 - present
       description:
-        - Electrical Engineering with Honours
-        #- 
-        #- title: Description 3.
-         # contents:
-          #  - Sub-description 1.
-           # - Sub-description 2,
+        - GPA - 4.0/4.0
+    - title: Bachelor of Technology, Electrical Engineering (with Honors)
+      institution: Indian Institute of Technology, Bombay
+      year: 2020 - 2024
+      description:
+        - GPA - 9.1/10
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Undergraduate Researcher 
-      institution: Trust Lab, IIT Bombay
-      year: 2023
-      description: 
-        - Project - Proposed a storage-efficient Last Level Cache(LLC, secure against side-channel attacks
-        - Guide -  Prof. Biswabandan Panda
+    - title: Accelerating Diffusion Model Inference on NVIDIA GPUs
+      institution: Georgia Tech (Advisor - Prof. Celine Lin)
+      year: Jan 2026 - present
+      description:
+        - Working on HiDeS, an algorithm-system co-design approach using hierarchical sparsity to accelerate block-diffusion model inference via selective recomputation across three granularities - layer, token, and column.
+        - Built custom CUDA kernels for attention and MLP to support selective recomputation.
+        - Built on top of the Fast-dLLM v2 block-diffusion model, achieving 2.33x and 2.67x speedups on A100 and H100 GPUs respectively.
+    - title: Modeling DNN Operators for ASTRA-sim using Machine Learning
+      institution: Georgia Tech (Advisor - Prof. Tushar Krishna)
+      year: May 2025 - Aug 2025
+      description:
+        - Worked to accelerate ASTRA-sim, an open-source infrastructure that models the full hardware-software co-design stack of distributed ML training systems.
+        - Profiled operators such as GEMM and Collectives for state-of-the-art LLMs on NVIDIA GPUs using CUDA.
+        - Developed ML models to replace Scale-Sim, a systolic-array simulator, to estimate execution timings of arbitrary GEMM operators.
+    - title: Avatar Cache - On-Demand Security with a Morphable Cache Architecture
+      institution: Georgia Tech / IIT Bombay (Advisors - Prof. Moinuddin K. Qureshi, Prof. Biswabandan Panda)
+      year: Jun 2024 - Aug 2025
+      description:
+        - Proposed a morphable cache design that provides security on demand at state-of-the-art cache design complexity.
+        - On-demand security lets users opt out of security to avoid performance and power overheads.
+        - Implemented on the ChampSim multi-core simulator, demonstrating 0.2% performance overhead, 2% power overhead, and 0.9% storage overhead in secure mode.
+    - title: Storage-efficient and Secure Fully-associative Last-level Cache
+      institution: IIT Bombay (Advisor - Prof. Biswabandan Panda)
+      year: Jan 2023 - Mar 2024
+      description:
+        - Proposed a secure, storage-efficient shared LLC to mitigate eviction-based side-channel attacks.
+        - Decoupled tag and data store with pointer-based indirection for 0% storage overhead over the non-secure baseline LLC with minimal performance impact.
+        - Reduced data store size by 50% while maintaining Mirage-level security without hurting performance.
+
+- title: Internships
+  type: time_table
+  contents:
+    - title: Research Associate - PhD
+      institution: Advanced Micro Devices (AMD)
+      year: Aug 2025 - Dec 2025
+      description:
+        - Implemented execution of GPU kernels on concurrent streams with inter-kernel data dependency to analyze performance gains from relaxing global synchronization constraints.
+        - Leveraged memory access patterns and inter-kernel thread-block dependencies for Llama-3.1 in vLLM with a complete Triton backend to identify concurrent-execution dispatch opportunities.
+        - Developed fine-grained dispatch strategies using global semaphores to overlap data-dependent kernel execution while preserving correctness, targeting higher throughput and lower dispatch overhead.
     - title: Digital Systems Intern
       institution: Texas Instruments, India
-      year: 2023
+      year: May 2023 - Jul 2023
       description:
-        - Worked on developing SystemVerilog logic to classify pulse-triggered and Level-Triggered Interrupt signals of a RADAR SOC
+        - Analyzed interrupt signals of a RADAR SOC built for automotive applications.
+        - Developed Verilog logic to classify pulse-triggered vs level-triggered interrupt behaviour.
+        - Designed a SystemVerilog Assertion flow to detect anomalies early in design and testing, and automated status monitoring of all interrupt signals with Python and SystemVerilog.
     - title: Embedded Systems Intern
       institution: NanoSniff Technologies, India
-      year: 2021
+      year: Dec 2021 - Jan 2022
       description:
-      - Developed a solar-powered ESP32-based wireless data acquisition system
+        - Developed a solar-powered wireless data acquisition system using two ESP32-WROOM modules.
+        - Designed a Li-ion charging circuit with dynamic power-path management and solar panels for uninterrupted power to a remote ESP32 node.
+        - Built a Python GUI to collect data from the remote node and maintain a PostgreSQL database.
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Trace-based Out-of-Order CPU Simulator
+      institution: Georgia Tech (Prof. Moinuddin K. Qureshi)
+      year: Aug 2024 - Dec 2024
+      description:
+        - Designed a lightweight, cycle-accurate, 4-way-wide out-of-order CPU simulator in C++.
+        - Modeled a multi-level cache hierarchy and replacement policies (LRU, LFU, etc.).
+        - Implemented static (way-partitioning) and dynamic (utility-based) cache partitioning schemes.
+    - title: Out-of-Order Superscalar Processor
+      institution: IIT Bombay (Prof. Virendra Singh)
+      year: Sep 2022 - Jan 2023
+      description:
+        - Led a four-member team to design a 2-wide superscalar out-of-order processor.
+        - Designed a 2-bit branch predictor, Fetch, Decode, Reservation Station, and ROB with register renaming.
+        - Implemented and tested the full design in VHDL on Quartus Prime.
+    - title: Hazardous Gas Detection using Nanosaur with VSLAM
+      institution: IIT Bombay (Prof. Siddharth Tallur)
+      year: Jan 2023 - Apr 2023
+      description:
+        - Designed an add-on circuit to detect NH3, CO2, CO, CH4 and other gases for an NVIDIA Jetson Nano.
+        - Implemented ORB-SLAM2 VSLAM with a stereo camera and integrated it into a Nanosaur robot using ROS2.
+        - Enabled remote Wi-Fi control and a server-based dashboard showing gas levels and a 3D map of the environment.
+    - title: Fault-Tolerant Core using FXA Architecture
+      institution: IIT Bombay (Prof. Virendra Singh)
+      year: Aug 2023 - Dec 2023
+      description:
+        - Modeled REMO, a fault-tolerant core in gem5 using an in-order verifier per instruction.
+        - Extended the flow to model the FXA architecture alongside REMO fault tolerance.
+        - Evaluated performance impact using the SPEC CPU2006 benchmark suite.
+    - title: Image Deblurring using Image Deconvolution
+      institution: IIT Bombay (Prof. Amit Sethi)
+      year: Feb 2023 - Apr 2023
+      description:
+        - Used a deep CNN to restore blurred images and reverse motion blur.
+        - Applied transfer learning on 12,240 image patches to reduce noise and artifacts and speed convergence.
+        - Achieved up to 92% deblurring accuracy with a TensorFlow model in Python.
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2023
-      items: 
-        - Awarded Undergraduate Research Award for my remarkable research on Secure Last Level Cache
-        - Awarded Best Project Award for building Hazardous Gas Detection bot with VSLAM
+      items:
+        - Undergraduate Research Award at IIT Bombay for research on the Secure Last-Level Cache
+        - Best Project Award for the Hazardous Gas Detection bot with VSLAM
+    - year: 2020
+      items:
+        - All-India Rank 649 out of 1,170,000 participants in JEE (Main) 2020
     - year: 2019
-      items: 
-        - Conferred with KVPY (Young Scientist Incentive Plan) fellowship with an All-India Rank 191 out of nearly 50,000 students in SA-stream, organised by Indian Institute of Science, Bangalore 
+      items:
+        - KVPY (Young Scientist Incentive Plan) fellowship, All-India Rank 191 out of ~50,000 in the SA stream, organized by IISc Bangalore
+        - Certificate of Merit in NSEA and NSEJS (top 1% of 53,900+ candidates), organized by IAPT (2018, 2019)
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Microarchitectural Security
+    - title: ML Systems and GPU Acceleration
       items:
-        - CPU side-channel attacks
-        - Cache-based side channels and secure cache design
-    - title: Computer Architecture
+        - Algorithm-system co-design for LLM and diffusion-model inference
+        - CUDA/Triton kernel design and GPU performance modeling
+    - title: Computer Architecture and Security
       items:
-        - Memory hierarchy and prefetching
-        - Architecture for parallel computing
+        - Microarchitectural security and secure cache design
+        - Memory hierarchy, cache partitioning, and simulation
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, C/C++, VHDL, Verilog, Embedded C, Assembly
+    - title: Tools & Frameworks
+      items:
+        - CUDA, Triton, PyTorch, vLLM, SGLang, TensorFlow
+        - ChampSim, gem5, GPGPU-Sim, Quartus Prime, Docker, Git
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Table tennis, football, badminton, inline skating
+    - <u>Hobbies -</u> Table tennis, football, badminton, inline skating
